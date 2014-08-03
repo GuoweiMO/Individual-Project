@@ -25,5 +25,11 @@
 	    }  
 	    
 		$(document).ready(function(){
-  			$("#sim").click(drawChart);
+  			$("#sim").click(function(){
+  				$(".active").attr("class","");
+  				$("#li-sim").attr("class","active");
+  				drawChart();
+  				$(".page-header").text("Simulation Result");
+  				});
 		});
+		
